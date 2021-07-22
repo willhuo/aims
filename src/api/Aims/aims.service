@@ -1,0 +1,16 @@
+﻿[Unit]
+Description=流媒体服务器
+
+[Service]
+WorkingDirectory=/home/aims
+ExecStart=/usr/bin/dotnet /home/aims/AIMS.dll
+Restart=always
+RestartSec=10
+KillSignal=SIGINT
+SyslogIdentifier=aims
+User=root
+Environment=ASPNETCORE_ENVIRONMENT=Production
+Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
+
+[Install]
+WantedBy=multi-user.target

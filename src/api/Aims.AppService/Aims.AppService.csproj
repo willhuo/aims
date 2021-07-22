@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="CSRedisCore" Version="3.6.6" />
+    <PackageReference Include="Dijing.Common.Core" Version="2.6.6" />
+    <PackageReference Include="Dijing.SerilogExt" Version="1.0.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Aims.Dto\Aims.Dto.csproj" />
+    <ProjectReference Include="..\Aims.Option\Aims.Option.csproj" />
+    <ProjectReference Include="..\Aims.Repo\Aims.Repo.csproj" />
+    <ProjectReference Include="..\AIMS.Util\AIMS.Util.csproj" />
+  </ItemGroup>
+
+</Project>
